@@ -66,9 +66,6 @@ nav{
     display: flex;
     order: 1;
   }
-    .green{
-      color: var(--green);
-    }
     ul{
       display: flex;
       justify-content: space-evenly;
@@ -119,24 +116,50 @@ nav{
   scrollbar-width: none;
 }
 .slides{
+  position: relative;
   height: 100vh;
   width: 100%;
   scroll-snap-align: start;
-  padding-top: 120px;
+  padding-top: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .slides > div {
   flex: 1;
 }
 
+.slide-title{
+  position: absolute;
+  top: 130px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.green{
+  padding: 0 5px;
+  background-image: linear-gradient(45deg, white, var(--green));
+  background-clip: text;
+  color: transparent;
+  font-size: xx-large;
+}
+
 
 /* *************************/
-/*         home css        */
+/*          home css       */
 /* *************************/
+
+.home-text{
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+}
+.home-text > div{
+  font-size: xxx-large;
+}
 
 .my-image{
   width: clamp(150px, 60%, 340px);
@@ -148,24 +171,27 @@ nav{
 }
 
 @media screen and (max-width:768px){
-  .home, .education{
+  .home{
     flex-direction: column;
-    padding-bottom: 60px;
     gap: 1rem;
+    padding-bottom: 40px;
   }
   .home > div {
     display: grid;
     align-content: center;
   }
-  .card {
-    width: 100%;
-  }
 }
 
 
 /* *************************/
-/*      education css      */
+/*         cards css       */
 /* *************************/
+
+.card-container{
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+}
 
 .card {
   position: relative;
@@ -174,7 +200,6 @@ nav{
   width: 80%;
   overflow: hidden;
   height: 300px;
-  background-color: white;
 }
   .card img {
     position: absolute;
@@ -188,12 +213,12 @@ nav{
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 20px;
+    padding: 10px;
     z-index: 1;
     height: 40%;
     width: 100%;
     display: grid;
-    align-items: end;
+    align-content: center;
     justify-items: center;
     opacity: 0;
   }
@@ -206,6 +231,9 @@ nav{
 }
 
 @media screen and (max-width:768px){
+  .card{
+    height: 200px;
+  }
   .card img{
     object-fit: cover;
   }
@@ -217,105 +245,53 @@ nav{
 
 
 /* *************************/
-/*       projects css      */
+/*      individual css     */
 /* *************************/
 
-.projects{
-  display: grid;
+#Education .card-container, #Projects .card-container{
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(2,1fr);
-  place-items: center;
-  gap:0;
 }
 
-@media screen and (max-width:768px) {
-  .projects{
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
-  }
-  .projects .card{
-    height: 170px;
-  }
-  .projects .card div{
-    height: 60%;
-  }
+#Skills .card-container{
+  grid-template-columns: repeat(6,1fr);
 }
-
-
-/* *************************/
-/*        skills css       */
-/* *************************/
-
-.skills{
-  margin: auto;
-  max-width: 950px;
-  gap: 1rem;
-}
-  .skills .card{
+  #Skills .card-container .card{
+    width: 50px;
+    height: 50px;
     border: none;
-    display: block;
-    height: auto;
-    background-color: transparent;
   }
-    .skills .card img{
-      margin: auto;
-      height: 50px;
-      width: 50px;
-      position: relative;
-      display: block;
+    #Skills .card-container .card:hover{
+      box-shadow: none;
     }
-    .skills .card div{
-      position: relative;
-      display: block;
-      opacity: 1;
-      text-align: center;
+    #Skills .card-container .card div{
+      display: none;
     }
-    .skills .card:hover div{
-      background: transparent;
-    }
-    .skills .card:hover{
-      box-shadow: 0px 0px 0px transparent;
-    }
-@media screen and (max-width:768px){
-  .skills{
-    display: grid;
-    grid-template-rows: repeat(2,1fr);
-    grid-template-columns: repeat(3,1fr);
-    place-items: center;
-  }
-  .skills .card div{
-    background-color: transparent;
-  }
-}
 
-
-/* *************************/
-/*     certificates css    */
-/* *************************/
-
-.certificates{
-  display: grid;
+#Certificates .card-container{
   grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(2,1fr);
-  place-items: center;
-  gap: 0;
-}
-@media screen and (max-width:768px) {
-  .certificates .card{
-    height: 170px;
-  }
-  .certificates .card div{
-    height: 40%;
-  }
 }
 
+#Contact-Me .card-container{
+  grid-template-columns: repeat(4,1fr);
+}
+  #Contact-Me .card-container .card{
+    height: 100px;
+    width: 100px;
+    border: none;
+  }
+    #Contact-Me .card-container .card:hover{
+      box-shadow: none;
+    }
+    #Contact-Me .card-container .card div{
+      display: none;
+    }
 
-/* *************************/
-/*      contact-me css     */
-/* *************************/
-
-@media screen and (max-width:768px) {
-  .vertical{
-    display: flex;
+@media screen and (max-width:768px){
+  #Education .card-container{
+    grid-template-columns: auto;
+  }
+  #Projects .card-container, #Skills .card-container, #Contact-Me .card-container{
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 2rem;
   }
 }
