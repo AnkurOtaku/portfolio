@@ -163,6 +163,9 @@ nav{
 /*          home css       */
 /* *************************/
 
+.home{
+  padding-bottom: 160px;
+}
 .home-text{
   display: flex;
   align-items: center;
@@ -175,10 +178,12 @@ nav{
 .my-image{
   width: clamp(150px, 60%, 340px);
   max-width: 340px;
-  height: clamp(300px, 70%, 530px);
-  background: url(me.png) center no-repeat;
+  height: clamp(300px, 70%, 480px);
+  border-radius: 50%;
+  background: url(me.jpg) center no-repeat;
   background-size: contain;
   filter: drop-shadow(10px 10px 5px var(--green));
+  overflow: visible;
 }
 
 @media screen and (max-width:768px){
