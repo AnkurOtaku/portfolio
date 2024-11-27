@@ -302,7 +302,7 @@ nav{
   grid-template-columns: repeat(4,1fr);
 }
   #Contact-Me .card-container .card{
-    height: 100px;
+    height: 30vh;
     width: 100px;
     border: none;
   }
