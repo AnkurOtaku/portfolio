@@ -1,6 +1,6 @@
 # Personal Portfolio  
 Hello There, This is Ankur!
-Welcome to my personal portfolio website! This is a showcase of who I am, what I’ve achieved, and what I can do. Designed with a sleek black-and-green theme, it provides an engaging and user-friendly experience for recruiters and collaborators.  
+Welcome to my personal portfolio website! This showcases who I am, what I’ve achieved, and what I can do. Designed with a sleek black-and-green theme, it provides an engaging and user-friendly experience for recruiters and collaborators.  
 
 ## 🌟 Purpose  
 This portfolio is crafted to:  
