@@ -1,9 +1,37 @@
 export const navLinks = [
   { id: 1, name: "Home", href: "#home" },
   { id: 2, name: "About", href: "#about" },
-  { id: 3, name: "Work", href: "#work" },
-  { id: 4, name: "Contact", href: "#contact" },
+  { id: 3, name: "Education", href: "#education" },
+  { id: 4, name: "Projects", href: "#projects" },
+  { id: 5, name: "Work", href: "#work" },
+  { id: 6, name: "Contact", href: "#contact" },
 ];
+
+export const myEducation = [
+  {
+    id: 1,
+    title: 'Graduation',
+    organisation: 'Maharishi Dayanand University',
+    finishinYear: 2024,
+    specialisation: 'B.Sc. (Computer Science)'
+  },
+  {
+    id: 2,
+    title: 'Backend Course',
+    organisation: 'Coursera',
+    marks: '95',
+    finishinYear: 2022,
+    specialisation: 'Django, Mongo DB'
+  },
+  {
+    id: 3,
+    title: 'Full Stack Course',
+    organisation: 'Coursera',
+    marks: '98',
+    finishinYear: 2023,
+    specialisation: 'Kubernetis, cloud'
+  },
+]
 
 export const clientReviews = [
   {
@@ -145,32 +173,22 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: "Web Developer",
-    pos: "Freelancer",
-    duration: "2022 - Present",
-    title:
-      "Web development is an exciting and thrilling journey, turning ideas into functional, interactive websites that impact users worldwide. It fosters creativity, problem-solving, and continuous learning, helping in both personal and professional growth.",
-    icon: "/assets/webdeveloper.svg",
-    animation: "salute",
-  },
-  {
-    id: 2,
     name: "SEO",
     pos: "Search Engine Optimiser",
-    duration: "Sep 2024 - Present",
+    duration: "Sep 2024 - Feb 2025",
     title:
       "SEO has helped my career by improving website visibility, driving organic traffic, and enhancing user engagement. I’ve learned keyword strategies, technical SEO, and analytics, strengthening my skills in digital marketing and web development.",
     icon: "/assets/seo.svg",
     animation: "clapping",
   },
-  // {
-  //   id: 3,
-  //   name: "Notion",
-  //   pos: "Junior Web Developer",
-  //   duration: "2019 - 2020",
-  //   title:
-  //     "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-  //   icon: "/assets/notion.svg",
-  //   animation: "victory",
-  // },
+  {
+    id: 2,
+    name: "National Stock Exchange",
+    pos: "Frontline Operationist Intern",
+    duration: "2024 - Present",
+    title:
+      "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
+    icon: "/assets/nse.png",
+    animation: "victory",
+  },
 ];
