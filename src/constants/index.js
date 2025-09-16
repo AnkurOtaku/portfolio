@@ -42,30 +42,6 @@ export const clientReviews = [
     review:
       "Working with Ankur was a fantastic experience. Consistently demonstrates strong SEO optimization skills with precision and efficiency ",
   },
-  // {
-  //   id: 2,
-  //   name: 'Mark Rogers',
-  //   position: 'Founder of TechGear Shop',
-  //   img: 'assets/review2.png',
-  //   review:
-  //     'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
-  // },
-  // {
-  //   id: 3,
-  //   name: 'John Dohsas',
-  //   position: 'Project Manager at UrbanTech ',
-  //   img: 'assets/review3.png',
-  //   review:
-  //     'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
-  // },
-  // {
-  //   id: 4,
-  //   name: 'Ether Smith',
-  //   position: 'CEO of BrightStar Enterprises',
-  //   img: 'assets/review4.png',
-  //   review:
-  //     'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
-  // },
 ];
 
 export const myProjects = [
@@ -74,7 +50,7 @@ export const myProjects = [
     desc: "Natural Remedies is a full-stack web application that allows users to manage and view natural remedies, including their ingredients, recipes, and other details. Built using the MERN stack with Zustand for state management and Vite for the frontend.",
     subdesc:
       "Developed with MongoDB, Express, React, and Node.js (MERN), Natural Remedies features a dynamic and responsive UI, a RESTful API backend, and a production-ready build serving static frontend files.",
-    href: "https://natural-remedies-qh2t.onrender.com/",
+    href: "https://natures-apothecary.vercel.app/",
     texture: "/textures/project/project1.mp4",
     logo: "/assets/natural-remedies-logo.png",
     logoStyle: {
@@ -97,7 +73,7 @@ export const myProjects = [
     subdesc:
       "Stay updated with the latest global news and real-time weather updates. Built with React and Tailwind CSS, this app offers a seamless user experience with a clean UI and enhanced responsiveness.",
     href: "https://news-app-ankurotaku.vercel.app/",
-    texture: "/textures/project/project3.mp4",
+    texture: "/textures/project/project2.mp4",
     logo: "/assets/live-news-weather-logo.png",
     logoStyle: {
       backgroundColor: "rgba(184, 92, 92, 0.6)",
@@ -185,9 +161,9 @@ export const workExperiences = [
     id: 2,
     name: "National Stock Exchange",
     pos: "Frontline Operationist Intern",
-    duration: "2024 - Present",
+    duration: "Nov 2024 - Present",
     title:
-      "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
+      "As Frontline Operationist, I get to work with senior developers and learning from them on real world projects. Attending meetings and it's a path to constant learning and improving my skills.",
     icon: "/assets/nse.png",
     animation: "victory",
   },
