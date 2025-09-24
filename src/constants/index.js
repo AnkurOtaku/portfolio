@@ -1,7 +1,7 @@
 export const navLinks = [
   { id: 1, name: "Home", href: "#home" },
   { id: 2, name: "About", href: "#about" },
-  { id: 3, name: "Education", href: "#education" },
+  { id: 3, name: "Resume", href: "/assets/Ankur's Resume.pdf" },
   { id: 4, name: "Projects", href: "#projects" },
   { id: 5, name: "Work", href: "#work" },
   { id: 6, name: "Contact", href: "#contact" },
@@ -46,10 +46,10 @@ export const clientReviews = [
 
 export const myProjects = [
   {
-    title: "Natural Remedies - Full-Stack Web App",
-    desc: "Natural Remedies is a full-stack web application that allows users to manage and view natural remedies, including their ingredients, recipes, and other details. Built using the MERN stack with Zustand for state management and Vite for the frontend.",
+    title: "Natural Apothecary - Full-Stack Web App",
+    desc: "Natural Apothecary is a full-stack web application that allows users to manage and view natural remedies, boosters, poisons, including their ingredients, recipes, and other details. Built using the MERN stack with Zustand for state management and Vite for the frontend.",
     subdesc:
-      "Developed with MongoDB, Express, React, and Node.js (MERN), Natural Remedies features a dynamic and responsive UI, a RESTful API backend, and a production-ready build serving static frontend files.",
+      "Developed with MongoDB, Express, React, and Node.js (MERN), Natural Apothecary features a dynamic and responsive UI, a RESTful API backend, and a production-ready build serving static frontend files.",
     href: "https://natures-apothecary.vercel.app/",
     texture: "/textures/project/project1.mp4",
     logo: "/assets/natural-remedies-logo.png",
