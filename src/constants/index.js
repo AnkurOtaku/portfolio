@@ -151,7 +151,7 @@ export const workExperiences = [
     id: 1,
     name: "SEO",
     pos: "Search Engine Optimiser",
-    duration: "Sep 2024 - Feb 2025",
+    duration: "April 2024 - Oct 2024",
     title:
       "SEO has helped my career by improving website visibility, driving organic traffic, and enhancing user engagement. I’ve learned keyword strategies, technical SEO, and analytics, strengthening my skills in digital marketing and web development.",
     icon: "/assets/seo.svg",
