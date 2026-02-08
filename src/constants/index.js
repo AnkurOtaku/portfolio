@@ -160,7 +160,7 @@ export const workExperiences = [
     id: 2,
     name: "National Stock Exchange",
     pos: "Frontline Operationist Intern",
-    duration: "Nov 2024 - Present",
+    duration: "Nov 2024 - Nov 2025",
     title:
       "As Frontline Operationist, I get to work with senior developers and learning from them on real world projects. Attending meetings and it's a path to constant learning and improving my skills.",
     icon: "/assets/nse.png",
